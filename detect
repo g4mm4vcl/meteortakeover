@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# Check for existence of a Meteor project
+ if [ -f $1/.meteor/release ]; then
+   echo "Meteor"
+   exit 0
+ else
+   echo "no"
+   exit 1
+ fi

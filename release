@@ -1,0 +1,8 @@
+#!/bin/sh
+cat <<EOF
+---
+config_vars:
+  METEOR_APP_DIR: app
+addons:
+  -
+EOF

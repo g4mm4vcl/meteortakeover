@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# Navigate into your app directory
+cd $1
+
+# Clean old build to avoid conflicts
+meteor reset
+
+# Build the Meteor app
+meteor build --directory ${1} --server-only
